@@ -29,6 +29,41 @@
 	<meta name="dcterms.language" title="ISO639-2" content="eng" />
 	<!-- Meta-data ends / Fin des métadonnées -->
 
+  <!-- WET scripts/CSS begin / Début des scripts/CSS de la BOEW --><!--[if IE 6]><![endif]-->
+	<%= stylesheet_link_tag 'base', :media => 'screen,print' %>
+	<!--[if IE 8]><%= stylesheet_link_tag 'base-ie8', :media => 'screen,print' %><![endif]-->
+	<!--[if IE 7]><%= stylesheet_link_tag 'base-ie7', :media => 'screen,print' %><![endif]-->
+	<!--[if lte IE 6]><%= stylesheet_link_tag 'base-ie6', :media => 'screen,print' %><![endif]-->
+	<%= stylesheet_link_tag 'util', :media => 'screen,print' %>
+  <!-- clf2-nsi2 theme begins / Début du thème clf2-nsi2 -->
+	<%= stylesheet_link_tag 'theme-clf2-nsi2', :media => 'screen,print' %>
+	<!--[if IE 7]><%= stylesheet_link_tag 'theme-clf2-nsi2-ie7', :media => 'screen,print' %><![endif]-->
+	<!--[if lte IE 6]><%= stylesheet_link_tag 'theme-clf2-nsi2-ie6', :media => 'screen,print' %><![endif]-->
+  <!-- clf2-nsi2 theme ends / Fin du thème clf2-nsi2 -->
+	<!-- WET scripts/CSS end / Fin des scripts/CSS de la BOEW -->
+
+	<!-- Progressive enhancement begins / Début de l'amélioration progressive -->
+	<%= javascript_include_tag "jquery.min.js" %>
+	<%= javascript_include_tag "pe-ap.js" %>
+	<script type="text/javascript">
+	/* <![CDATA[ */
+		var params = {
+		};
+		PE.progress(params);
+	/* ]]> */
+	</script>
+	<!-- Progressive enhancement ends / Fin de l'amélioration progressive -->
+	
+	<!-- WET print CSS begins / Début du CSS de la BOEW pour l'impression -->
+	<%= stylesheet_link_tag 'pf-if', :media => 'print' %>
+  <!-- general theme begins / Début du thème général -->
+	<%= stylesheet_link_tag 'pf-if-theme-general', :media => 'print' %>
+  <!-- general theme ends / Fin du thème général -->
+	<!-- WET print CSS ends / Fin du CSS de la BOEW pour l'impression -->
+
+
+	<%= javascript_include_tag :defaults %>
+
 	<!-- WET scripts/CSS begin / Début des scripts/CSS de la BOEW --><!--[if IE 6]><![endif]-->
 	<link href="../css/base.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 8]><link href="../css/base-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
