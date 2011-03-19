@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%= render :partial => 'layouts/head' %>
+</head>
+<body>
+<!-- Two column layout begins / Début de la mise en page de deux colonnes -->
+<div id="cn-body-inner-2col">
+  <%= render :partial => 'layouts/header' %>
+
+	<div id="cn-cols">
+	<!-- Main content begins / Début du contenu principal --> 
+	<div id="cn-centre-col-gap"></div>
+	<div id="cn-centre-col" role="main"><div id="cn-centre-col-inner">
+    <%= yield %>
+	</div></div>
+	<!-- Main content ends / Fin du contenu principal --> 
+  <%= render :partial => 'layouts/left_nav' %>
+	<!-- Primary navigation (left column) begins / Début de la navigation principale (colonne gauche) -->
+	</div>
+
+  <%= render :partial => 'layouts/footer' %>
+	</div></div>
+	<!-- Footer ends / Fin du pied de page -->
+</div>
+<!-- Two column layout ends / Fin de la mis en page de deux colonnes -->
+</body>
+</html>
