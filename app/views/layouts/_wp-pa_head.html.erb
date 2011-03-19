@@ -15,15 +15,22 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 <!-- Favicon (optional) ends / Find du favicon (optionnel) -->
 
 <!-- Meta-data begins / Début des métadonnées -->
-<meta name="dcterms.description" content="<%= t(:app_description) %>" />
-<meta name="description" content="<%= t(:app_description) %>" />
-<meta name="keywords" content="<%= t(:app_keywords) %>" />
-<meta name="dcterms.creator" title="Titles of Federal Organizations" content="<%= t(:app_creator) %>" />
-<meta name="dcterms.title" content="<%= t(:app_title) %>" />
+<meta name="dcterms.description" content="English description / Description en anglais" />
+<meta name="dcterms.description" lang="fr" content="French description / Description en français" />
+<meta name="description" content="English description / Description en anglais" />
+<meta name="description" lang="fr" content="French description / Description en français" />
+<meta name="keywords" content="English keywords / Mots-clés en anglais" />
+<meta name="keywords" lang="fr" content="French keywords / Mots-clés en français" />
+<meta name="dcterms.creator" title="Titles of Federal Institutions" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
+<meta name="dcterms.creator" lang="fr" title="Titres des institutions fédérales" content="French name of the content author / Nom en français de l'auteur du contenu" />
+<meta name="dcterms.title" content="English title / Titre en anglais" />
+<meta name="dcterms.title" lang="fr" content="French title / Titre en français" />
 <meta name="dcterms.issued" title="W3CDTF" content="Date published (YYYY-MM-DD) / Date de publication (AAAA-MM-JJ)" />
 <meta name="dcterms.modified" title="W3CDTF" content="Date modified (YYYY-MM-DD) / Date de modification (AAAA-MM-JJ)" />
 <meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
+<meta name="dcterms.subject" lang="fr" title="scheme" content="French subject terms / Termes de sujet en français" />
 <meta name="dcterms.language" title="ISO639-2" content="eng" />
+<meta name="dcterms.language" lang="fr" title="ISO639-2" content="fra" />
 <!-- Meta-data ends / Fin des métadonnées -->
 
 <!-- WET scripts/CSS begin / Début des scripts/CSS de la BOEW --><!--[if IE 6]><![endif]-->
@@ -33,9 +40,9 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 <!--[if lte IE 6]><%= stylesheet_link_tag 'base-ie6', :media => 'screen,print' %><![endif]-->
 <%= stylesheet_link_tag 'util', :media => 'screen,print' %>
 <!-- clf2-nsi2 theme begins / Début du thème clf2-nsi2 -->
-<%= stylesheet_link_tag 'theme-clf2-nsi2', :media => 'screen,print' %>
-<!--[if IE 7]><%= stylesheet_link_tag 'theme-clf2-nsi2-ie7', :media => 'screen,print' %><![endif]-->
-<!--[if lte IE 6]><%= stylesheet_link_tag 'theme-clf2-nsi2-ie6', :media => 'screen,print' %><![endif]-->
+<%= stylesheet_link_tag 'wp-pa-theme-clf2-nsi2', :media => 'screen,print' %>
+<!--[if IE 7]><%= stylesheet_link_tag 'wp-pa-theme-clf2-nsi2-ie7', :media => 'screen,print' %><![endif]-->
+<!--[if lte IE 6]><%= stylesheet_link_tag 'wp-pa-theme-clf2-nsi2-ie6', :media => 'screen,print' %><![endif]-->
 <!-- clf2-nsi2 theme ends / Fin du thème clf2-nsi2 -->
 <!-- WET scripts/CSS end / Fin des scripts/CSS de la BOEW -->
 
@@ -58,4 +65,4 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 <!-- general theme ends / Fin du thème général -->
 <!-- WET print CSS ends / Fin du CSS de la BOEW pour l'impression -->
 
-<%= javascript_include_tag :defaults %>
+<
