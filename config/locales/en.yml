@@ -2,4 +2,7 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  app_title: 2 column layout - CLF 2.0 Theme - HTML5 - Web Experience Toolkit (WET)
+  app_description: English description
+  app_keywords: English keywords
+  app_creator: English name of the content author
