@@ -5,7 +5,17 @@ class ApplicationController < ActionController::Base
     render :layout => 'wp-pa'
   end
   
-  def home
+  def onecol
+    render :layout => '1col'
+  end
+
+  def twocol
+    render :layout => '2col'
+  end
+
+  def threecol
     render :layout => '3col'
   end
+
+  alias home twocol
 end
