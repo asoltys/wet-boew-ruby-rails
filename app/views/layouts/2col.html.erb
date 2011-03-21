@@ -6,7 +6,13 @@
 <body>
 <!-- Two column layout begins / Début de la mise en page de deux colonnes -->
 <div id="cn-body-inner-2col">
+  <!-- Skip header begins / Début du saut de l'en-tête -->
+  <%= render :partial => 'layouts/skip_header' %>
+  <!-- Skip header ends / Fin du saut de l'en-tête -->
+
+  <!-- Header begins / Début de l'en-tête -->
   <%= render :partial => 'layouts/header' %>
+  <!-- Header ends / Fin de l'en-tête -->
 
 	<div id="cn-cols">
 	<!-- Main content begins / Début du contenu principal --> 
