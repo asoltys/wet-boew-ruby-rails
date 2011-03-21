@@ -16,6 +16,4 @@ class ApplicationController < ActionController::Base
   def threecol
     render :layout => '3col'
   end
-
-  alias home twocol
 end
