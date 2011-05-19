@@ -3,3 +3,6 @@ fr:
   app_description: Description en français
   app_keywords: Mots-clés en français
   app_creator: Nom en français de l'auteur du contenu
+  app_creator_title: Titres des institutions fédérales
+  app_url: [www.]siteprimaire-mainsite.gc.ca
+  app_subject: Termes de sujet en français

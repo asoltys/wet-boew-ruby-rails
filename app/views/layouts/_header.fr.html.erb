@@ -1,15 +1,3 @@
-<!-- Skip header begins / Début du saut de l'en-tête -->
-<div id="cn-skip-head">
-<nav>
-  <ul id="cn-tphp">
-    <li id="cn-sh-link-1"><a href="#cn-cont">Passer au contenu principal</a></li>
-    <li id="cn-sh-link-2"><a href="#cn-nav">Passer à la navigation principale</a></li>
-  </ul>
-</nav>
-</div>
-<!-- Skip header ends / Fin du saut de l'en-tête -->
-
-<!-- Header begins / Début de l'en-tête -->
 <div id="cn-head"><div id="cn-head-inner">
 <header>
 <!-- clf2-nsi2 theme begins / Début du thème clf2-nsi2 -->
@@ -19,13 +7,13 @@
   <!-- Banner begins / Début de la bannière -->
   <div id="cn-leaf"></div>
   <div id="cn-banner" role="banner">
-    <p id="cn-banner-text">Nom de l'institution</p>
-    <p>[www.]siteprimaire-mainsite.gc.ca</p>
+    <p id="cn-banner-text"><%= t(:app_title) %><</p>
+    <p><%= t(:app_url) %></p>
   </div>
   <!-- Banner ends / Fin de la bannière -->
 
   <nav role="navigation">
-   <%= render :partial => 'layouts/cn-cmb' %>
+    <%= render :partial => 'layouts/cn-cmb' %>
 
     <!-- Breadcrumb begins / Début du fil d'Ariane -->
     <div id="cn-bcrumb">
@@ -42,4 +30,3 @@
 <!-- clf2-nsi2 theme ends / Fin du thème clf2-nsi2 -->
 </header>
 </div></div>
-<!-- Header ends / Fin de l'en-tête -->
