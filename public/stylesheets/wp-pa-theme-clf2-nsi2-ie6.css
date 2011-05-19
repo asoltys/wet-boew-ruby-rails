@@ -3,10 +3,11 @@
 Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
 Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
 */
+#cn-centre-col-inner h1, #cn-in-pd h3 {clip: rect(1px 1px 1px 1px);}
 #cn-centre-col-inner {display: inline-block;} 
 #cn-foot-inner {margin-top: -18px;}
 #cn-in-links {display: inline-block; float: none;}
-#cn-sig {margin-bottom: 10px;}
+#cn-sig {margin-bottom: 9px;}
 #cn-msg-space {height: 250px;}
 #cn-lower-msg {height: 120px;}
 #cn-lower-msg p {margin-top: 18px;}

@@ -9,7 +9,8 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 /* #cn-body-inner-1col {padding: 0; width: auto;} */
 
 /* Hide hidden heading elements / Cacher les éléments d'en-tête invisibles */
-#cn-body-inner-1col h1, #cn-in-pd h3 {position: absolute; left: -9000px; font-size: 10%;}
+#cn-body-inner-1col h1, #cn-in-pd h3 {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important;}
+*:first-child+html #cn-body-inner-1col h1, *:first-child+html  #cn-in-pd h3 {clip: rect(1px 1px 1px 1px); height: 1px !important; width: 1px !important; overflow: hidden !important;}
 
 #cn-skip-head li span {display: block;}
 #cn-skip-head a:hover, #cn-skip-head a:focus, #cn-skip-head a:active {background-color: #363;}
@@ -25,6 +26,10 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 #cn-foot {height: 4.2em;}
 #cn-in-pd {border-top: 15px solid #363;}
 #cn-in-pd ul {list-style-type: none; margin: -2px 0 0 -40px;}
-#cn-in-pd ul li {width: 48%; margin-top: 5px;}
+#cn-in-pd ul li {width: 47%; margin-top: 5px;}
 #cn-inotices-link-left {float: left;}
 #cn-inotices-link-right {float: right; text-align: right;}
+.cn-doc-dates {margin: 0px; width: 100%; float: left; clear: left; min-width: 6em; margin-top: 5px;}
+.cn-doc-dates dt {padding-right: 0.3em; display: inline;}
+.cn-doc-dates dd {margin-left: 0px; display: inline;}
+.cn-doc-dates dd span {white-space: nowrap;}

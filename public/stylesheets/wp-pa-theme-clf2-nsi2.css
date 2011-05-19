@@ -4,11 +4,11 @@ Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/
 Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
 */
 #cn-body-inner-1col {margin: 0 auto; width: 600px; min-width: 12.00em; border-top: 20px solid #FFFFFF;}
-#cn-centre-col-inner h1, #cn-in-pd h3 {position: absolute; left: -9000px; font-size: 10%;}
+#cn-centre-col-inner h1, #cn-centre-col-inner h2, #cn-in-pd h3 {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important;}
 
 #cn-skip-head li span {display: block;}
 #cn-skip-head a:hover, #cn-skip-head a:focus, #cn-skip-head a:active {background-color: #363;}
-#cn-sig {margin-bottom: 10px;}
+#cn-sig {margin-bottom: 6px;}
 #cn-msg-space {margin-bottom: 30px; min-height: 250px; width: 600px; color: #000;}
 #cn-upper-msg {height: 130px; background: #363;}
 #cn-lower-msg {min-height: 120px; background: #CCC; float: left; width: 100%;}
