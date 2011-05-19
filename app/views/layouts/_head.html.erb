@@ -41,7 +41,7 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 
 <!-- Progressive enhancement begins / Début de l'amélioration progressive -->
 <%= javascript_include_tag "jquery.min.js" %>
-<%= javascript_include_tag "pe-ap.js" %>
+<%= javascript_include_tag "pe-ap.js", :id => 'progressive' %>
 <script type="text/javascript">
 /* <![CDATA[ */
   var params = {
@@ -54,7 +54,7 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 <!-- WET print CSS begins / Début du CSS de la BOEW pour l'impression -->
 <%= stylesheet_link_tag 'pf-if', :media => 'print' %>
 <!-- general theme begins / Début du thème général -->
-<%= stylesheet_link_tag 'pf-if-theme-general', :media => 'print' %>
+<%= stylesheet_link_tag 'pf-if-theme-clf2-nsi2', :media => 'print' %>
 <!-- general theme ends / Fin du thème général -->
 <!-- WET print CSS ends / Fin du CSS de la BOEW pour l'impression -->
 
