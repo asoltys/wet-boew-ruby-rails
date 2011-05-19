@@ -21,14 +21,14 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 #cn-body-inner-2col #cn-centre-col-gap {left: 155px;}
 
 /* Hide hidden heading elements / Cacher les éléments d'en-tête invisibles */
-#cn-bcrumb h2, #cn-cmb h2, #cn-in-pd h3 {position: absolute; left: -9000px; font-size: 10%;}
+#cn-bcrumb h2, #cn-cmb h2, #cn-in-pd h3 {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important;}
 
 #cn-skip-head a:hover, #cn-skip-head a:focus, #cn-skip-head a:active {background-color: #363;}
 #cn-head {float: left;}
 #cn-sig {float: left; width: 50%; min-width: 300px;}
 #cn-wmms {float: right; text-align: right; width: 49.8%; min-width: 100px;}
 
-#cn-leaf {position: relative; z-index: 2; float: left; text-align: center; width: 100%; min-width: 70px; height: 70px; background-image: url(../images/lffl.png); background-repeat: no-repeat; background-position: top center;}
+#cn-leaf {position: relative; z-index: 2; float: left; text-align: center; width: 100%; min-width: 70px; height: 70px; background-image: url(../images/lffl.png); background-repeat: no-repeat; background-position: top center; margin-top: 2px;}
 #cn-banner, #cn-banner-eng, #cn-banner-fra {float: left; width: 100%; min-height: 80px; margin-top: -35px; text-align: center; background-color: #363;}
 #cn-banner #cn-banner-text, #cn-banner-eng #cn-banner-text, #cn-banner-fra #cn-banner-text {width: 100%; margin: 0; padding: 29px 0 0 0; color: #FFF; font-weight: bold; font-size: 180%; font-family: "times new roman", serif;}
 #cn-banner p, #cn-banner-eng p, #cn-banner-fra p {width: 100%; margin: 0; padding: 0 0 4px 0; color: #FFF; font-size: 120%; font-family: Arial, Helvetica, sans-serif;}
@@ -55,7 +55,7 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 .cn-left-col-default #cn-search-box a, .cn-search-box a {margin-left: -10px;}
 .cn-left-col-default li {border-top: 1px solid #363;}
 .cn-left-col-default li:first-child {border: none;}
-#cn-pd-link {position: absolute; left: -9000px; font-size: 10%;}
+#cn-pd-link {position: absolute; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; overflow: hidden !important;}
 #cn-pd-ul {border-top: 15px solid #363; margin-left: 0; padding-left: 40px;}
 
 .cn-left-col-default h3, .cn-left-col-default h3 a:link, .cn-left-col-default h3 a:visited, .cn-right-col-default h3, .cn-right-col-default h3 a:link, .cn-right-col-default h3 a:visited {color: #FFF; text-decoration: none; display: block;}
