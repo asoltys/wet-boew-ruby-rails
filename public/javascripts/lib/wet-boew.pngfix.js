@@ -1,7 +1,10 @@
-/* Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
-Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
-*/
+/*!
+ * jQuery integration v1.2 / Intégration jQuery v1.2
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+ * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ */
+ 
 /**
 *    PNGFix - To allow for IE 5.5 + to show proper transparency for png's
 *    Note :: Increased the fix to encompass all page png's
@@ -52,9 +55,9 @@ var ieOptimzier = {
     },
     tweakheight : function(){
 		if ($('#cn-body-inner-3col').length > 0) $('#cn-foot').css('height',$('#cn-foot-inner').height()).css('position','relative').css('border-right','none');
-		else if ($('#cn-body-inner-2col').length > 0) $('#cn-foot').css('height',$('#cn-foot-inner').height()).css('padding-bottom',$('#cn-body-inner-2col').css('border-width')).css('position','relative');
-		else if ($('cn-body-inner-2col-right').length > 0) $('#cn-foot').css('height',$('#cn-foot-inner').height()).css('padding-bottom',$('cn-body-inner-2col-right').css('border-width')).css('position','relative');
-		else $('#cn-foot').css('height',$('#cn-foot-inner').height()).css('padding-bottom',$('#cn-body-inner-1col').css('border-top-width')).css('position','relative');
+		else if ($('#cn-body-inner-2col').length > 0) $('#cn-foot').css('height',$('#cn-foot-inner').height()).css('padding-bottom',$('#cn-body-inner-2col').css('border-width')).css('position','relative').css('border-right','none');
+		else if ($('cn-body-inner-2col-right').length > 0) $('#cn-foot').css('height',$('#cn-foot-inner').height()).css('padding-bottom',$('cn-body-inner-2col-right').css('border-width')).css('position','relative').css('border-right','none');
+		else $('#cn-foot').css('height',$('#cn-foot-inner').height()).css('padding-bottom',$('#cn-body-inner-1col').css('border-top-width')).css('position','relative').css('border-right','none');
 		
 		if ($('#cn-left-col-gap, #cn-centre-col-gap, #cn-right-col-gap').length > 0) {
 			$("#cn-left-col-gap, #cn-centre-col-gap, #cn-right-col-gap").css('height',($('#cn-foot').offset().top - $('#cn-centre-col-gap').offset().top));
@@ -82,20 +85,17 @@ var overFlowFix = {
 		if ($('#cn-right-col').length > 0) this.maxRightWidth = $('#cn-right-col-gap').width();
 		
 		// Fix left column if it has been stretched
-		if ( this.maxLeftWidth > 0 && $('#cn-left-col').outerWidth() > this.maxLeftWidth) {
-			this.adjust($('#cn-left-col'), this.maxLeftWidth);
-			$('#cn-left-col').css('overflow-x','visible');
-		}		
+		if ( this.maxLeftWidth > 0 && $('#cn-left-col').outerWidth() > this.maxLeftWidth) this.adjust($('#cn-left-col'), this.maxLeftWidth);
+		
 		// Fix centre column if it has been stretched
-		if ($('#cn-centre-col-inner').outerWidth() > $('#cn-centre-col-gap').width()) {
-			this.adjust($('#cn-centre-col-inner'), this.maxCentreWidth);
-			$('#cn-centre-col').css('overflow-x','visible');
-		}
+		if ($('#cn-centre-col-inner').outerWidth() > $('#cn-centre-col-gap').width()) this.adjust($('#cn-centre-col-inner'), this.maxCentreWidth);
+		
 		// Fix right column if it has been stretched
-		if (this.maxRightWidth > 0 && $('#cn-right-col').outerWidth() > this.maxRightWidth) {
-			this.adjust($('#cn-right-col'), this.maxRightWidth);
-			$('#cn-right-col').css('overflow-x','visible');
-		}
+		if (this.maxRightWidth > 0 && $('#cn-right-col').outerWidth() > this.maxRightWidth) this.adjust($('#cn-right-col'), this.maxRightWidth);
+		
+		$('#cn-left-col').css('overflow-x','visible');
+		$('#cn-centre-col').css('overflow-x','visible');
+		$('#cn-right-col').css('overflow-x','visible');
 	},
 	adjust: function(container, maxWidth) {
 		var fixesNeeded = false;
