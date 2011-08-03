@@ -1,7 +1,9 @@
-/* Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
-Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
-*/
+/*!
+ * jQuery integration v1.2 / Intégration jQuery v1.2
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+ * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ */
 
 /** JavaScript / JQuery Capabilities with Name-spaced HTML **/
 var PE = {  
@@ -82,3 +84,13 @@ var PE = {
     	return jQuery("script[id='wet-boew_plugin_" + name + "']").attr('src');
     }
 };
+
+//Functionality to detect if CSS enabled at the browser level
+$.extend(window, {cssEnabled : null});
+$(document).ready(function() {
+    cssTest = $("<div id=\"cssTest\" style=\"height:0px;\">&#160;</div>");
+    $("body").append(cssTest);
+    cssEnabled = cssTest.height() === 0;
+    $.extend(window, {cssEnabled : cssEnabled});
+	$("#cssTest").remove();
+});

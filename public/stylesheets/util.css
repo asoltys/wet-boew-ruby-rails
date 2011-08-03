@@ -1,8 +1,10 @@
 @charset "utf-8";
-/* Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
-Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
-*/
+/*!
+ * CSS presentation layer v1.2 / Couche présentation de CSS v1.2
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+ * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ */
 
 /* Generic utility CSS / CSS d'utilité générique */
 .fontsize200, .fontSize200 {font-size: 200%;}
@@ -33,8 +35,10 @@ Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwt
 .smallfont, .fontsize75, .smallFont, .fontSize75 {font-size: 75%;}
 .fontsize70, .fontSize70 {font-size: 70%;}
 
+/**** Deprecated - Use .cn-invisible instead ****/
 .navaid {height: 1px; width: 1px; overflow: hidden; float: right; font-size: 0; position: absolute; top:auto; left: -10000px;}
 .navaid a {color: #FFFFFF;}
+/************************************************/
 
 .widthfull, .widthFull {width: 98.5%;}
 .width95 {width: 95%;}

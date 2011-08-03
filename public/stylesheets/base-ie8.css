@@ -1,8 +1,9 @@
 @charset "utf-8";
-/* Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
-Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
-*/
-#cn-skip-head a:link, #cn-skip-head a:visited {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)";}
-#cn-skip-head a:hover, #cn-skip-head a:focus, #cn-skip-head a:active {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=100)";}
-
+/*!
+ * CSS presentation layer v1.2 / Couche présentation de CSS v1.2
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+ * Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+ */
+.cn-show-onhover {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)";}
+.cn-show-onhover:hover, .cn-show-onhover:focus, .cn-show-onhover:active {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=100)";}
